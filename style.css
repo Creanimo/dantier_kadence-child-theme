@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*!
+Theme Name: Dantier - Kadence Child Theme
+Theme URI: https://www.creanimo.net
+Template: kadence
+Author: Ferdinand Engländer
+Author URI: https://www.creanimo.net
+Description: A child theme for the Kadence Theme.
+Version: 1.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: dantier_kadence-child-theme
+*/
+/* Theme customization starts here
+-------------------------------------------------------------- */
+@media (min-width: 1025px) {
+  .transparent-header .main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a:hover {
+    color: var(--global-palette2) !important;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .site-branding a.brand::after {
+    content: "";
+    width: 120px;
+    height: 120px;
+    background: url(../../../wp-content/uploads/2022/09/Dantier-Logo-Gold-Transparent-300x300.png);
+    background-size: contain;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .site-branding a.brand img {
+    display: none;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .main-navigation .primary-menu-container > ul > li.menu-item > a,
+.transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner a.header-button {
+    color: var(--global-palette2) !important;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .main-navigation .primary-menu-container > ul > li.menu-item > a:hover,
+.transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner a.header-button:hover {
+    color: white !important;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .header-button-inner-wrap a.header-button {
+    color: var(--global-palette2) !important;
+    border-color: var(--global-palette2) !important;
+  }
+  .transparent-header .site-main-header-wrap.item-at-start .site-header-row-container-inner .header-button-inner-wrap a.header-button:hover {
+    color: white !important;
+    border-color: white !important;
+    background-color: transparent;
+  }
+}/*# sourceMappingURL=style.css.map */

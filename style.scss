@@ -1,0 +1,55 @@
+/*!
+Theme Name: Dantier - Kadence Child Theme
+Theme URI: https://www.creanimo.net
+Template: kadence
+Author: Ferdinand Engländer
+Author URI: https://www.creanimo.net
+Description: A child theme for the Kadence Theme.
+Version: 1.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: dantier_kadence-child-theme
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+@media (min-width: 1025px) {
+    .transparent-header {
+        // fix hover for when one pager is current page
+        .main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a:hover {
+            color: var(--global-palette2) !important;
+        }
+        // changing colors for transparent header before scrolling
+        .site-main-header-wrap.item-at-start .site-header-row-container-inner {
+            .site-branding a.brand {
+                &::after {
+                    content: "";
+                    width: 120px;
+                    height: 120px;
+                    background: url(../../../wp-content/uploads/2022/09/Dantier-Logo-Gold-Transparent-300x300.png);
+                    background-size: contain;
+                }
+                img {
+                    display: none;
+                }
+            }
+            .main-navigation .primary-menu-container > ul > li.menu-item > a,
+            a.header-button {
+                color: var(--global-palette2) !important;
+                &:hover {
+                    color: white !important;
+                }
+            }
+            .header-button-inner-wrap a.header-button {
+                color: var(--global-palette2) !important;
+                border-color: var(--global-palette2) !important;
+                &:hover {
+                    color: white !important;
+                    border-color: white !important;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+}
